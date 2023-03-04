@@ -25,7 +25,7 @@ namespace ProjetoSenai
             try
             {
                 
-                conexao con = new conexao();//slaaaaaaaaaaaaaa
+                conexao con = new conexao();
                 MySqlConnection conexao = con.getconexao();
                 conexao.Open();
                 string inserir = "insert into"+ tabela +"(@argumentos) values " + "(@adicionar)";
