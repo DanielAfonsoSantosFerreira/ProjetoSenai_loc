@@ -25,12 +25,12 @@ namespace ProjetoSenai
             try
             {
                 
-                conexao con = new conexao();
+                conexao con = new conexao();//slaaaaaaaaaaaaaa
                 MySqlConnection conexao = con.getconexao();
                 conexao.Open();
-                string inserir = "insert into @tabela (@argumentos) values " + "(@adicionar)";
+                string inserir = "insert into"+ tabela +"(@argumentos) values " + "(@adicionar)";
                 MySqlCommand comando = new MySqlCommand(inserir, conexao);
-                comando.Parameters.AddWithValue("@tabela", tabela);
+                
                 comando.Parameters.AddWithValue("@argumentos", argumentos);
                 comando.Parameters.AddWithValue("@adicionar", adicionar); 
                 comando.CommandType = CommandType.Text;
