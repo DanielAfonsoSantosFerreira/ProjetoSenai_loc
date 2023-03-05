@@ -12,7 +12,7 @@ namespace ProjetoSenai
         public funcionario(int id_funcionario)
         {
             this.id_funcionario = id_funcionario;
-
+            //sasuke > killua
         }
     }
 }
